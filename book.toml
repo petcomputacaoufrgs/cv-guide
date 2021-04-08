@@ -1,0 +1,6 @@
+[book]
+authors = ["Victoria Duarte", "Afonso Ferrer"]
+language = "pt"
+multilingual = false
+src = "src"
+title = "Guia de Currículo"

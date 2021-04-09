@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="pt" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Guia de Currículo</title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introdução</a></li><li class="chapter-item expanded "><a href="structure/essencial.html"><strong aria-hidden="true">2.</strong> Estruturando o Curriculo</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="structure/design.html"><strong aria-hidden="true">2.1.</strong> Layout e Design</a></li></ol></li><li class="chapter-item expanded "><a href="content/size.html"><strong aria-hidden="true">3.</strong> Preenchendo o Curriculo</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="content/education.html"><strong aria-hidden="true">3.1.</strong> Educação/ Certificação</a></li><li class="chapter-item expanded "><a href="content/experience.html"><strong aria-hidden="true">3.2.</strong> Experiência</a></li><li class="chapter-item expanded "><a href="content/habilities.html"><strong aria-hidden="true">3.3.</strong> Habilidades</a></li></ol></li><li class="chapter-item expanded "><a href="complete.html"><strong aria-hidden="true">4.</strong> Curriculo completo</a></li><li class="chapter-item expanded "><a href="linkedin.html"><strong aria-hidden="true">5.</strong> BÔNUS: Dicas para o Linkedin</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Guia de Currículo</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <img src="./assets/cover.jpg" alt="cover"/>
+<blockquote>
+<p><img src="./assets/megaphone.png" alt="megaphone" width="25"/> Revisado por <a href="https://www.linkedin.com/in/ferrerafonso/">Afonso Ferrer</a></p>
+</blockquote>
+<h1 id="introdução"><a class="header" href="#introdução">Introdução</a></h1>
+<p>Currículo é uma palavra bem assustadora para muita gente. Só de ouvir já dá um calafrio. Mas, fazer um currículo é bem mais simples do que parece! Esse tutorial vai construir um currículo passo a passo e compartilhar algumas dicas.</p>
+<h1 id="estruturando-o-currículo"><a class="header" href="#estruturando-o-currículo">Estruturando o Currículo</a></h1>
+<h2 id="o-que-é-essencial-de-se-ter-em-um-currículo"><a class="header" href="#o-que-é-essencial-de-se-ter-em-um-currículo">O que é essencial de se ter em um currículo?</a></h2>
+<ol>
+<li>Nome completo</li>
+<li>Algum meio de contato: normalmente se coloca telefone, email e linkedin. Para área da programação, é interessante colocar o github.</li>
+<li>Idiomas</li>
+<li>Educação / Certificações</li>
+<li>Experiência</li>
+<li>Habilidades</li>
+</ol>
+<h2 id="coisas-que-você-não-precisa-colocar-em-um-currículo-a-não-ser-que-explicitamente-solicitadas-pela-empresa-contratante"><a class="header" href="#coisas-que-você-não-precisa-colocar-em-um-currículo-a-não-ser-que-explicitamente-solicitadas-pela-empresa-contratante">Coisas que você não precisa colocar em um currículo a não ser que explicitamente solicitadas pela empresa contratante</a></h2>
+<ol>
+<li>Foto</li>
+<li>Endereço</li>
+</ol>
+<blockquote>
+<p><img src="structure/../assets/exclamation.png" alt="atention" width="20"/> Essas informações às vezes podem ser usada para fazer um filtro prévio pelo perfil socioeconômico do candidato, sem se preocupar em avaliar a competência dele</p>
+</blockquote>
+<h1 id="estruturando-o-currículo-1"><a class="header" href="#estruturando-o-currículo-1">Estruturando o Currículo</a></h1>
+<h2 id="layout-e-design"><a class="header" href="#layout-e-design">Layout e design</a></h2>
+<p>No geral, costuma-se colocar nome e informações pessoais na parte superior da página, deixando as informações relacionadas a qualificações e competências na parte inferior. Recomenda-se colocar a experiência primeiro, seguida por habilidades e qualificações. Mas, não há uma regra específica para a distribuição, desde que o currículo seja claro.
+O design costuma ser simples, a ideia do currículo é ser um documento formal objetivo e sucinto e, por esse motivo, o ideal é evitar muitas cores ou fontes chamativas.</p>
+<h3 id="exemplo-de-estruturação-de-currículo"><a class="header" href="#exemplo-de-estruturação-de-currículo">Exemplo de estruturação de currículo</a></h3>
+<p><img src="structure/../assets/cv_structure.png" alt="CV Structure" title="Estrutura do Currículo" /></p>
+<blockquote>
+<p><img src="structure/../assets/idea.png" alt="atention" width="20"/> Note que, no exemplo, como a candidata é programadora, é relevante colocar seu github</p>
+</blockquote>
+<h1 id="preenchendo-o-currículo"><a class="header" href="#preenchendo-o-currículo">Preenchendo o currículo</a></h1>
+<h2 id="tamanho"><a class="header" href="#tamanho">Tamanho</a></h2>
+<p>Evite ao máximo passar de uma página com seu currículo. A única situação em que isso é desejável é se o candidato tiver muitas qualificações diretamente relacionadas ao cargo de interesse.</p>
+<h1 id="preenchendo-o-currículo-1"><a class="header" href="#preenchendo-o-currículo-1">Preenchendo o currículo</a></h1>
+<h2 id="educação--certificação"><a class="header" href="#educação--certificação">Educação / Certificação</a></h2>
+<p>Nessa área deve ser colocado formações, cursos e certificados. É importante acrescentar o período de duração ou a data de aquisição da formação, curso ou certificado. A ordem ideal é sempre o evento mais atual em cima.</p>
+<p>Não é relevante colocar o ensino médio, a não ser que este seja integrado com um curso técnico que seja relevante para o cargo desejado.</p>
+<blockquote>
+<p><img src="content/../assets/pin.png" alt="atention" width="20"/> <strong>Exemplo:</strong> </p>
+<p>Uma pessoa atua na área de programação, mas tem um técnico integrado em química. Essa informação é relevante caso ela vá atuar em uma empresa de produção de produtos químicos, por exemplo, mas não em uma rede de hotéis.</p>
+</blockquote>
+<h3 id="no-currículo"><a class="header" href="#no-currículo">No currículo</a></h3>
+<p>[<img src="content/../assets/cv_education.png" alt="CV Education" title="Estrutura do Currículo" />]</p>
+<blockquote>
+<p><img src="content/../assets/idea.png" alt="atention" width="20"/> A candidata optou por separar a graduação de outros certificados, assim dando maior destaque para o que ela considera mais relevante</p>
+</blockquote>
+<h1 id="preenchendo-o-currículo-2"><a class="header" href="#preenchendo-o-currículo-2">Preenchendo o currículo</a></h1>
+<h2 id="experiência"><a class="header" href="#experiência">Experiência</a></h2>
+<p>É interessante colocar uma breve descrição da sua atuação dentro do emprego / estágio / bolsa. Pensando em termos de espaço, as experiências mais antigas podem ter uma descrição mais sucinta, por acabarem sendo menos relevantes que as mais atuais.</p>
+<p>Também vale destacar as experiências que sejam mais relevantes para o cargo de interesse, explicando com um pouco mais de detalhes seu papel. Para pessoas com pouca experiência, no entanto, qualquer experiência, mesmo que não profissional, pode ser colocada, desde que acrescente conteúdo relevante ao currículo.</p>
+<p>A ordem ideal é sempre o evento mais atual em cima.</p>
+<blockquote>
+<p><img src="content/../assets/pin.png" alt="atention" width="20"/> <strong>Exemplo:</strong> </p>
+<p>Fazer parte do RH da escola é uma experiência interessante, que pode mostrar suas habilidades em administrar ou organizar eventos, lidar com documentos e em liderar.</p>
+</blockquote>
+<h3 id="no-currículo-1"><a class="header" href="#no-currículo-1">No currículo</a></h3>
+<p>[<img src="content/../assets/cv_experience.png" alt="CV Experience" title="Estrutura do Currículo" />]</p>
+<h1 id="preenchendo-o-currículo-3"><a class="header" href="#preenchendo-o-currículo-3">Preenchendo o currículo</a></h1>
+<h2 id="habilidades"><a class="header" href="#habilidades">Habilidades</a></h2>
+<p>Embora não seja necessário, é possível colocar o quanto você sabe de uma determinada habilidade e há várias formas de representar isso: palavras simples, barras de progresso, estrelas entre outros. O importante é manter um único formato. </p>
+<p>Também é relevante colocar <em>soft skills</em>.</p>
+<blockquote>
+<p><img src="content/../assets/idea.png" alt="atention" width="20"/> <strong><em>Soft skills</em>:</strong> habilidades que não estão relacionadas a um conhecimento acadêmico ou de alguma tecnologia, como, por exemplo, trabalho em grupo, organização, bom em apresentações, entre outros.</p>
+</blockquote>
+<h3 id="no-currículo-2"><a class="header" href="#no-currículo-2">No currículo</a></h3>
+<p><img src="content/../assets/cv_habilities.png" alt="CV Habilities" title="Estrutura do Currículo" /></p>
+<h1 id="currículo-completo"><a class="header" href="#currículo-completo">Currículo Completo</a></h1>
+<p><img src="./assets/cv_complete.png" alt="CV Complete" title="Estrutura do Currículo" /></p>
+<blockquote>
+<p><img src="./assets/exclamation.png" alt="atention" width="20"/> <strong>IMPORTANTE:</strong> Evite erros de português, pois eles depreciam o currículo</p>
+</blockquote>
+<h1 id="guia-de-linkedin"><a class="header" href="#guia-de-linkedin">Guia de Linkedin</a></h1>
+<p>O Linkedin é como se fosse um currículo online. No entanto, ao invés de termos uma página, temos um scroll. Isso permite colocar mais informações que no currículo.</p>
+<h2 id="lembre-se-da-foto-e-do-banner"><a class="header" href="#lembre-se-da-foto-e-do-banner">Lembre-se da foto e do banner!</a></h2>
+<p>Uma foto e um banner na sua página deixam seu linkedin com uma cara bem mais ativa e, portanto, tendem a atrair mais empresas.</p>
+<h2 id="seções"><a class="header" href="#seções">Seções</a></h2>
+<ul>
+<li>Sobre: de um mini resumo da sua experiência e das suas habilidades.</li>
+<li>Experiência: é muito interessante colocar uma descrição com um pouco mais de detalhes sobre o que foi feito em cada projeto/empresa. Um scroll grande não é um problema!</li>
+<li>Competências e recomendações: todas as tecnologias que você já tiver tido um certo contato são válidas de serem colocadas, mesmo que faça algum tempo que você mexa com elas.</li>
+</ul>
+<p>É muito interessante também fazer os testes de competência oferecidos pelo próprio Linkedin, pois é pequena certificação de que você de fato tem aquele conhecimento. </p>
+<blockquote>
+<p><img src="./assets/idea.png" alt="atention" width="20"/> Lembre-se de recomendar as competências de quem você conhece. Isso ajuda muito!</p>
+</blockquote>
+<blockquote>
+<p><img src="./assets/exclamation.png" alt="atention" width="20"/> <strong>ATENÇÃO</strong></p>
+<p>Cuidado com muitos empregos de poucos meses. Isso costuma ser encarado como uma <em>red flag</em> para os recrutadores, pois eles não tem certeza se você vai ficar muito tempo com a empresa deles.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
